@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html translate="no">
+    <head>
+    <title>Photoshop</title>
+    <link rel="icon" href="http://localhost:4444/phishing-tools/phishing_files/icon.png" type="image/x-icon" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Quicksan;
+  background: black;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size:150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color:white;
+
+}
+
+h1:before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ADFF2F;
+  overflow: hidden;
+  animation: animate 7s linear infinite;
+  border-right: 4px solid #ADFF2F;
+  
+}
+.underline{
+  position: absolute;
+  top: 56%;
+  left: 58%;
+  transform: translate(-60%,-60%);
+  right: 20%;
+  width: 85%;
+  border: 5px solid #03e9f4;;
+  border-radius: 15px;
+}
+.green-neon {
+   text-shadow: 6px 6px 3px rgba(0,0,0,.4),
+    0 0 20px #03e9f4;,
+    0 0 40px rgba(0, 230, 118, .75),
+    0 0 50px rgba(0, 230, 118, .75),
+    0 0 100px rgba(0, 230, 118, .75);
+}
+.green-neon:before{
+  content:'';
+  background: rgba(105, 240, 174, .25);
+  z-index: -1;
+  opacity: .7;
+  filter: blur(30px);
+  width: 100%;
+  height: 100%;
+}
+@keyframes animate{
+
+  0%{
+    width: 0;
+  }
+  50%{
+    width: 99%;
+  }
+  100%{
+    width: 0;
+  }
+}
+</style>
+    </head>
+    <body>
+	    <div>
+	    <h1 data-text="Loading...">Loading...</h1>
+	    <div class="underline green-neon"></div>
+	    </div>
+    </body>
+</html>
